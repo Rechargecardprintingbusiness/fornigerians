@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mini printer </title>
+    <style>
+        *{
+            text-align:center;
+        }
+        a:link{
+            text-decoration:none;
+        }
+       
+        h4{
+            font-family: times ;
+            color: darkblue;
+        }
+     .popup{
+         width:350px;
+         background: white;
+         border-radius: 7px;
+         border: 2px solid darkblue;
+         position: absolute;
+         top:50%;
+         visibility:visible;
+         transform:translate(+3%,-50%) scale(1);
+         padding: 0 10px 10px;
+         transition: 0.4s, 0.4s;
+     }
+     .open-popup{
+        visibility: visible;
+         top: 50%;
+         transform:translate(+3%,-50%) scale(1);
+     }
+     .popup button{
+         width:100px;
+         margin-top:50px;
+         background: #6fd649;
+         border:0;
+         outline: none;
+         border-radius: 6px;
+         padding: 10px 0;
+         color: #fff;
+         cursor: pointer;
+         box-shadow: 0 5px 5px rgb(0, 0, 0, 0.2);
+         
+     }
+          
+    </style>
+</head>
+<body>
+    <br><br><br><br>
+     <header style="border: 2px solid red;">
+         <h2 style="color: darkblue; margin-left: 15px; padding-top:10px;">Select network to print</h2>
+         <br>
+         <h4>Network</h4>
+         <select style="margin-left:20px; padding:10px; padding-right:200px;">
+             <option>MTN</option>
+             <option>AIRTEL</option>
+             <option>9MOBILE</option>
+             <option>GLO</option>
+         </select>
+         <br>
+         <h4>Amount</h4>
+         <select style="margin-left:20px; padding:10px; padding-right:213px;">
+             <option>₦ 100</option>
+             <option>₦ 200</option>
+             <option>₦ 500</option>
+             <option>₦ 1000</option>
+         </select>
+         <br>
+         <h4>Quantity</h4>
+               <select style="margin-left:20px; padding:10px; padding-right:235px;">
+             <option>10</option>
+             <option>20</option>
+             <option>30</option>
+             <option>40</option>
+             <option>50</option>
+             <option>60</option>
+             <option>70</option>
+             <option>80</option>
+             <option>90</option>
+             <option>100</option>
+         </select>
+         <br><br><br><br>
+        
+         <div style="font-weight:bold;">
+        <a href="process.html">
+             <button style="background-color:green;padding:10px;padding-left:50px;padding-right:50px;color:white;border-radius:10px; outline: none; cursor: pointer;box-shadow: 0 5px 5px rgb(0, 0, 0, 0.2); m" onclick="openPopup()">Submit</button>  
+        </a>
+        <a href="">
+             <button style="background-color:red;padding:10px;padding-right:60px;padding-left:60px;color:white;border-radius:10px;">Save</button>
+        </a>
+    </div>
+        <br><br>
+     </header><br><br>
+                       
+</body>
+</html>

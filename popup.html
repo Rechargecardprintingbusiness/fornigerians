@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page title</title>
+    <style>
+        
+       
+        }
+        .btn{
+            width:70px;
+            height:30px;
+            margin-top:300px;
+        }
+        .popup{
+            width:400px;
+            background: #fff;
+            border-radius:6px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%) scale(0.1);
+            text-align: center;
+            padding: 0 50px 50px;
+            visibility: hidden;
+            transition: transform 0.4s, top 0.4s;
+        }
+        .open-popup{
+            visibility: visible;
+            top: 50%;
+            transform: translate(-50%,-50%) scale(1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+        <button type="submit" class="btn" onclick="openPopup()">submit</button>
+        </div>
+    </header>
+    
+        <div class="popup" id="popup">
+            <h2>Access Granted</h2>
+            <buttons style="padding:10px;background-color:green;margin-top:30px;" type="button" onclick="closePopup()">OK</button>
+        </div>
+    </div>
+    <script>
+        let popup = document.getElementById("popup");
+        
+        function openPopup(){
+            popup.classList.add("open-popup");
+        }
+        function closePopup(){
+            popup.classList.remove("open-popup");
+        }
+    </script>
+</body>
+</html>
